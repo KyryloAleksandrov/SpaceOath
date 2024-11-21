@@ -57,6 +57,10 @@ PrefabInstance:
       value: Nexus Gate
       objectReference: {fileID: 0}
     - target: {fileID: 1678411228631887698, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+      propertyPath: isFacedown
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678411228631887698, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
       propertyPath: faceupMaterial
       value: 
       objectReference: {fileID: 2100000, guid: b8c9e14d271df1f4da3794f33d79abc5, type: 2}

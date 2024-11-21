@@ -57,6 +57,10 @@ PrefabInstance:
       value: Mirror Caverns
       objectReference: {fileID: 0}
     - target: {fileID: 1678411228631887698, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+      propertyPath: isFacedown
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678411228631887698, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
       propertyPath: faceupMaterial
       value: 
       objectReference: {fileID: 2100000, guid: 622c41698d0f34d4a924981e65477eec, type: 2}

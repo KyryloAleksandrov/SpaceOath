@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e836c46aab1744cbbc01b0d80ba42f, type: 3}
+  m_Name: SitesConfig
+  m_EditorClassIdentifier: 
+  siteDataArray:
+  - siteTransform: {fileID: 4894237252876321324, guid: dd19ab11905a69244b69701b9daa026e, type: 3}
+  - siteTransform: {fileID: 8836481828049475134, guid: 01034a442b1f7f34f9e8e62b23389eba, type: 3}
+  - siteTransform: {fileID: 3528164874166488275, guid: f9b58c16a6148894990527506337efd2, type: 3}
+  - siteTransform: {fileID: 3893338790689319205, guid: 2b1bdc6ba99c86f4d859ce563cbfc3f7, type: 3}
+  - siteTransform: {fileID: 1099782672939615453, guid: 765048420e9d8244e943e8d287799934, type: 3}
+  - siteTransform: {fileID: 3258590685587159264, guid: 41d1a24da9cd6d342b53507656c23424, type: 3}
+  - siteTransform: {fileID: 7974882561912550516, guid: ff962cd4ba5ae7c44aa8f09ed90d6be1, type: 3}
+  - siteTransform: {fileID: 2632055421664452507, guid: 8b1f4105009fda14ab17577dd3f74143, type: 3}
+  - siteTransform: {fileID: 6026163643085825352, guid: 388542ddc86b285488c190e4ce5702be, type: 3}
+  - siteTransform: {fileID: 5387713620344037341, guid: 48aa333a35f080a43a7cefafcd2f046d, type: 3}
+  - siteTransform: {fileID: 4081366001145567943, guid: 0d7f8f9324857454da06f9ac0b9882cf, type: 3}
+  - siteTransform: {fileID: 7301050204103093684, guid: 4eba6fe70fed1d044afe1f6fe7d81a21, type: 3}
+  - siteTransform: {fileID: 2943793800035846340, guid: 6441e1f3ad0fd194198245d1d7106881, type: 3}
+  - siteTransform: {fileID: 3607339717530505901, guid: 16d42e4e8a5c3e148b106ae3988853e8, type: 3}
+  - siteTransform: {fileID: 5035647204501842689, guid: 469aeb877c27c19499af06bc21523334, type: 3}
+  - siteTransform: {fileID: 1024699734187884699, guid: a9567c7742db4344f9e80151de450177, type: 3}
+  - siteTransform: {fileID: 4062573445712687361, guid: ccdf030a90c1c86458f095c378eff4e5, type: 3}
+  - siteTransform: {fileID: 8073050403782346483, guid: 6668b7eb07e2d4a4fb2a91a370299b03, type: 3}
+  - siteTransform: {fileID: 64503418818308374, guid: cb33a216582fc6d4d86a3dce9674609f, type: 3}
+  - siteTransform: {fileID: 3932395826644879465, guid: 85a4c466efb1d764aa13f5d5f809fd64, type: 3}
+  - siteTransform: {fileID: 2507079208226662769, guid: 87a73ba7dfc9bb14998dc2206a9f24ec, type: 3}
+  - siteTransform: {fileID: 8810240670597121718, guid: 8cf5693e48c96764a8675eb69ad102c0, type: 3}
+  - siteTransform: {fileID: 5113433419205621850, guid: c71aa60f41170a244a73b2bee307e329, type: 3}
+  - siteTransform: {fileID: 936924795334624220, guid: 87f55bdaaa8bdd14c9d214ba3a7c9698, type: 3}
+  - siteTransform: {fileID: 7548348204838027485, guid: df9f5a9c62d894145b5e66489dc66c2b, type: 3}
+  - siteTransform: {fileID: 7651097121520543729, guid: 68b60885379c1e247bfed69ab83f19bf, type: 3}
+  - siteTransform: {fileID: 9164414627853058328, guid: b5e71e1847f2f624d90b00902fedaebb, type: 3}
+  - siteTransform: {fileID: 2300829428558082588, guid: ad8612f10023ce04eb3b18f4b80433ef, type: 3}
+  - siteTransform: {fileID: 7438564580717759472, guid: edc38e845628c1f42bd573410c8eb037, type: 3}
+  - siteTransform: {fileID: 3219379181309119061, guid: e2c08eaf4cd845e4db73728d8eb5a992, type: 3}

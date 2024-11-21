@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Boot : MonoBehaviour
 {
+    [SerializeField] private SitesConfig sitesConfig;
     void Awake()
     {
-        ProjectContext.Instance.Initialize();
+        ProjectContext.Instance.Initialize(sitesConfig);
     }
 
 

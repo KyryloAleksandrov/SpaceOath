@@ -15,8 +15,14 @@ public class ProjectContext
         }
     }
 
-    public void Initialize()
+    public IConfigService ConfigService {get; private set;}
+
+    public IMapSetupService MapSetupService {get; private set;}
+
+    public void Initialize(SitesConfig sitesConfig)
     {
+        ConfigService = new ConfigService(sitesConfig);
+        MapSetupService = new MapSetupService(ConfigService);
         Debug.Log("Loaded successfully");
     }
 }

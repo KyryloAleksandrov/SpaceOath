@@ -57,6 +57,10 @@ PrefabInstance:
       value: Voidfrost Expanse
       objectReference: {fileID: 0}
     - target: {fileID: 1678411228631887698, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+      propertyPath: isFacedown
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678411228631887698, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
       propertyPath: faceupMaterial
       value: 
       objectReference: {fileID: 2100000, guid: 5938687fbb03a9943b5a4ac7ca301752, type: 2}

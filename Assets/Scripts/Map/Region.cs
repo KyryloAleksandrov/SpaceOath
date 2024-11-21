@@ -16,4 +16,9 @@ public class Region : MonoBehaviour
     {
         
     }
+
+    public SiteTile[] GetSiteTiles()
+    {
+        return siteTiles;
+    }
 }

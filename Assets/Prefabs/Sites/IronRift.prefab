@@ -57,6 +57,10 @@ PrefabInstance:
       value: Iron Rift
       objectReference: {fileID: 0}
     - target: {fileID: 1678411228631887698, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+      propertyPath: isFacedown
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678411228631887698, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
       propertyPath: faceupMaterial
       value: 
       objectReference: {fileID: 2100000, guid: bace676e5151b234bbf119756af9006e, type: 2}

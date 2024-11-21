@@ -16,4 +16,9 @@ public class Map : MonoBehaviour
     {
         
     }
+
+    public Region[] GetRegions()
+    {
+        return regions;
+    }
 }

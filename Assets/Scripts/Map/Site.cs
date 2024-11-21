@@ -16,7 +16,7 @@ public class Site : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SetMaterial();
+
     }
 
     // Update is called once per frame
@@ -35,14 +35,20 @@ public class Site : MonoBehaviour
         return isFacedown;
     }
 
-    public void SetMaterial()
+    public string GetName()
     {
-        if(isFacedown)
-        {
-            siteMesh.material = facedownMaterial;
-        }
-        else{
-            siteMesh.material = faceupMaterial;
-        }
+        return siteName;
+    }
+
+    public void TurnFaceUp()
+    {
+        siteMesh.material = faceupMaterial;
+        isFacedown = false;
+    }
+
+    public void TurnFaceDown()
+    {
+        siteMesh.material = facedownMaterial;
+        isFacedown = true;
     }
 }

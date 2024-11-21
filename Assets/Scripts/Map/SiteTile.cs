@@ -5,6 +5,8 @@ using UnityEngine;
 public class SiteTile : MonoBehaviour
 {
     private Site site;
+
+    private bool isEmpty;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +18,6 @@ public class SiteTile : MonoBehaviour
     {
         
     }
-    
     public void SetSite(Site site)
     {
         this.site = site;
@@ -25,5 +26,15 @@ public class SiteTile : MonoBehaviour
     public Site GetSite()
     {
         return site;
+    }
+
+    public void SetIsEmpty(bool isEmpty)
+    {
+        this.isEmpty = isEmpty;
+    }
+
+    public bool GetIsEmpty()
+    {
+        return isEmpty;
     }
 }
