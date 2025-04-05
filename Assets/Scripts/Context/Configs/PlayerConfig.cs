@@ -14,5 +14,9 @@ public class PlayerConfig : ScriptableObject
 public struct PlayerData
 {
     public string playerName;
+
     public Color color;
+    public PlayerRole playerRole;
+
+    public Transform pawn;
 }

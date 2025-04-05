@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73e836c46aab1744cbbc01b0d80ba42f, type: 3}
   m_Name: SitesConfig
   m_EditorClassIdentifier: 
-  siteDataArray:
+  siteDatas:
   - siteTransform: {fileID: 4894237252876321324, guid: dd19ab11905a69244b69701b9daa026e, type: 3}
   - siteTransform: {fileID: 8836481828049475134, guid: 01034a442b1f7f34f9e8e62b23389eba, type: 3}
   - siteTransform: {fileID: 3528164874166488275, guid: f9b58c16a6148894990527506337efd2, type: 3}

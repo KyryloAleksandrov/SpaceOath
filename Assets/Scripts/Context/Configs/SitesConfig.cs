@@ -6,7 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "SitesConfig", menuName = "MyConfigs/SitesConfig")]
 public class SitesConfig : ScriptableObject
 {
-    public SiteData[] siteDataArray;
+    public SiteData[] siteDatas;
 }
 
 [Serializable]

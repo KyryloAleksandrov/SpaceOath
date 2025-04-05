@@ -18,11 +18,13 @@ public class ProjectContext
     public IConfigService ConfigService {get; private set;}
 
     public IMapSetupService MapSetupService {get; private set;}
+    public IPlayerService PlayerService{get; private set;}
 
-    public void Initialize(SitesConfig sitesConfig)
+    public void Initialize(SitesConfig sitesConfig, PlayerConfig playerConfig)
     {
-        ConfigService = new ConfigService(sitesConfig);
+        ConfigService = new ConfigService(sitesConfig, playerConfig);
         MapSetupService = new MapSetupService(ConfigService);
+        PlayerService = new PlayerService(ConfigService);
         Debug.Log("Loaded successfully");
     }
 }

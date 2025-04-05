@@ -13,11 +13,7 @@ MonoBehaviour:
   m_Name: PlayerConfig
   m_EditorClassIdentifier: 
   playerDatas:
-  - playerName: Black
-    color: {r: 0, g: 0, b: 0, a: 0}
-  - playerName: Blue
-    color: {r: 0, g: 0, b: 1, a: 0}
-  - playerName: Red
-    color: {r: 1, g: 0, b: 0, a: 0}
-  - playerName: Green
-    color: {r: 0, g: 1, b: 0, a: 0}
+  - playerName: Keksimus Maximus
+    color: {r: 1, g: 0.51800305, b: 0, a: 0}
+    playerRole: 0
+    pawn: {fileID: 2580571525570370834, guid: 8f5f8d53667b18842a756f8466022afb, type: 3}

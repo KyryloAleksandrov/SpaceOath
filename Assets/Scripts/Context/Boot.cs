@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 public class Boot : MonoBehaviour
 {
     [SerializeField] private SitesConfig sitesConfig;
+    [SerializeField] private PlayerConfig playerConfig;
     void Awake()
     {
-        ProjectContext.Instance.Initialize(sitesConfig);
+        ProjectContext.Instance.Initialize(sitesConfig, playerConfig);
     }
 
 
