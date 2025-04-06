@@ -8,7 +8,8 @@ public abstract class Player
     public Color color;
 
     public string playerName;
-    public int supply;
+    public int maxSupply = 9;
+    public int currentSupply;
     public int warbands;
     public Site currentSite;
 

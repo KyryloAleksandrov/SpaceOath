@@ -8,7 +8,7 @@ public class Renegade : Player
 
     public Renegade(string playerName, Transform pawn, Color color): base(playerName, pawn, color)
     {
-
+        currentSupply = maxSupply;
     }
 
     //implement take turns

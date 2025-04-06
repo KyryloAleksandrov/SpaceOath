@@ -27,7 +27,7 @@ public class GameMaster : MonoBehaviour
         mapSetupService.FirstSetup(map);
         foreach(Player player in playerService.players)
         {
-            Debug.Log(player.playerName + " " + player.Role);
+            //Debug.Log(player.playerName + " " + player.Role);
         }
 
         playerService.SpawnPawn(playerService.activePlayer, mapSetupService.sites[5]);

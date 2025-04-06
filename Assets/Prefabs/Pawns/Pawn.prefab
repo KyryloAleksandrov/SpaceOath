@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2580571525570370834}
   - component: {fileID: 5214129645719870313}
-  m_Layer: 0
+  - component: {fileID: 358036338854481751}
+  m_Layer: 7
   m_Name: Pawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,6 +50,27 @@ MonoBehaviour:
   meshRenderers:
   - {fileID: 6908398005723688897}
   - {fileID: 5295609559806373844}
+--- !u!65 &358036338854481751
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405712559672713044}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.2, y: 2, z: 1.2}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &2469620171176327073
 GameObject:
   m_ObjectHideFlags: 0
@@ -61,7 +83,7 @@ GameObject:
   - component: {fileID: 1484872623977417029}
   - component: {fileID: 6908398005723688897}
   - component: {fileID: 353093175436815335}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +190,7 @@ GameObject:
   - component: {fileID: 7038007559793979311}
   - component: {fileID: 5295609559806373844}
   - component: {fileID: 6373379458949346223}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -515,6 +515,9 @@ MonoBehaviour:
   siteLayerMask:
     serializedVersion: 2
     m_Bits: 64
+  pawnLayerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!4 &1231816534
 Transform:
   m_ObjectHideFlags: 0
