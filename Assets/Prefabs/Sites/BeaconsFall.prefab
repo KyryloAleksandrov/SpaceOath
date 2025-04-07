@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BeaconsFall
       objectReference: {fileID: 0}
+    - target: {fileID: 7365280626898361020, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+      propertyPath: faceupMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 3fa4cd48ea0d8b6429b225b42195824f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

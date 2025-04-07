@@ -12,5 +12,7 @@ public class SitesConfig : ScriptableObject
 [Serializable]
 public struct SiteData
 {
-    public Transform siteTransform;
+    public Transform siteTransform; //it will use the default site prefab
+    public string siteName;
+    public Material faceUpMaterial;
 }

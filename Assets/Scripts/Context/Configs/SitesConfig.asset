@@ -13,33 +13,93 @@ MonoBehaviour:
   m_Name: SitesConfig
   m_EditorClassIdentifier: 
   siteDatas:
-  - siteTransform: {fileID: 4894237252876321324, guid: dd19ab11905a69244b69701b9daa026e, type: 3}
-  - siteTransform: {fileID: 8836481828049475134, guid: 01034a442b1f7f34f9e8e62b23389eba, type: 3}
-  - siteTransform: {fileID: 3528164874166488275, guid: f9b58c16a6148894990527506337efd2, type: 3}
-  - siteTransform: {fileID: 3893338790689319205, guid: 2b1bdc6ba99c86f4d859ce563cbfc3f7, type: 3}
-  - siteTransform: {fileID: 1099782672939615453, guid: 765048420e9d8244e943e8d287799934, type: 3}
-  - siteTransform: {fileID: 3258590685587159264, guid: 41d1a24da9cd6d342b53507656c23424, type: 3}
-  - siteTransform: {fileID: 7974882561912550516, guid: ff962cd4ba5ae7c44aa8f09ed90d6be1, type: 3}
-  - siteTransform: {fileID: 2632055421664452507, guid: 8b1f4105009fda14ab17577dd3f74143, type: 3}
-  - siteTransform: {fileID: 6026163643085825352, guid: 388542ddc86b285488c190e4ce5702be, type: 3}
-  - siteTransform: {fileID: 5387713620344037341, guid: 48aa333a35f080a43a7cefafcd2f046d, type: 3}
-  - siteTransform: {fileID: 4081366001145567943, guid: 0d7f8f9324857454da06f9ac0b9882cf, type: 3}
-  - siteTransform: {fileID: 7301050204103093684, guid: 4eba6fe70fed1d044afe1f6fe7d81a21, type: 3}
-  - siteTransform: {fileID: 2943793800035846340, guid: 6441e1f3ad0fd194198245d1d7106881, type: 3}
-  - siteTransform: {fileID: 3607339717530505901, guid: 16d42e4e8a5c3e148b106ae3988853e8, type: 3}
-  - siteTransform: {fileID: 5035647204501842689, guid: 469aeb877c27c19499af06bc21523334, type: 3}
-  - siteTransform: {fileID: 1024699734187884699, guid: a9567c7742db4344f9e80151de450177, type: 3}
-  - siteTransform: {fileID: 4062573445712687361, guid: ccdf030a90c1c86458f095c378eff4e5, type: 3}
-  - siteTransform: {fileID: 8073050403782346483, guid: 6668b7eb07e2d4a4fb2a91a370299b03, type: 3}
-  - siteTransform: {fileID: 64503418818308374, guid: cb33a216582fc6d4d86a3dce9674609f, type: 3}
-  - siteTransform: {fileID: 3932395826644879465, guid: 85a4c466efb1d764aa13f5d5f809fd64, type: 3}
-  - siteTransform: {fileID: 2507079208226662769, guid: 87a73ba7dfc9bb14998dc2206a9f24ec, type: 3}
-  - siteTransform: {fileID: 8810240670597121718, guid: 8cf5693e48c96764a8675eb69ad102c0, type: 3}
-  - siteTransform: {fileID: 5113433419205621850, guid: c71aa60f41170a244a73b2bee307e329, type: 3}
-  - siteTransform: {fileID: 936924795334624220, guid: 87f55bdaaa8bdd14c9d214ba3a7c9698, type: 3}
-  - siteTransform: {fileID: 7548348204838027485, guid: df9f5a9c62d894145b5e66489dc66c2b, type: 3}
-  - siteTransform: {fileID: 7651097121520543729, guid: 68b60885379c1e247bfed69ab83f19bf, type: 3}
-  - siteTransform: {fileID: 9164414627853058328, guid: b5e71e1847f2f624d90b00902fedaebb, type: 3}
-  - siteTransform: {fileID: 2300829428558082588, guid: ad8612f10023ce04eb3b18f4b80433ef, type: 3}
-  - siteTransform: {fileID: 7438564580717759472, guid: edc38e845628c1f42bd573410c8eb037, type: 3}
-  - siteTransform: {fileID: 3219379181309119061, guid: e2c08eaf4cd845e4db73728d8eb5a992, type: 3}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Aeon Prism
+    faceUpMaterial: {fileID: 2100000, guid: eaa2fadd420e3dc42bdad37d45858417, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Beacons Fall
+    faceUpMaterial: {fileID: 2100000, guid: 3fa4cd48ea0d8b6429b225b42195824f, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Bio Vault Prime
+    faceUpMaterial: {fileID: 2100000, guid: 0706fd07f40d10848ba247f023f919f8, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Celestial Forge
+    faceUpMaterial: {fileID: 2100000, guid: f91dd2c61bd905d409cfc64d73984bb0, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Cloudhaven Platform
+    faceUpMaterial: {fileID: 2100000, guid: 663bd6d8228933c4fb7ce38b2bd5ab66, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Crypt of the Mechanist
+    faceUpMaterial: {fileID: 2100000, guid: df8b2cc200edfc14c80cfb94c218e153, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Driftspire Outpost
+    faceUpMaterial: {fileID: 2100000, guid: 9215d7ccdd390364db75240f995d3abf, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Dust Seas of Drayla
+    faceUpMaterial: {fileID: 2100000, guid: 7bbcede1071eae14893545ff7b1c3a12, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Ember Ring
+    faceUpMaterial: {fileID: 2100000, guid: 980a0f3255f0952458341b606902c11c, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Fractured Spire
+    faceUpMaterial: {fileID: 2100000, guid: 2fa4d0b175b878f4cb0e771a2b4c79c0, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Gilded Arcology
+    faceUpMaterial: {fileID: 2100000, guid: 4f6ab1551d4cb184c8a5b58fb647a243, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Iron Rift
+    faceUpMaterial: {fileID: 2100000, guid: bace676e5151b234bbf119756af9006e, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Lunar Cradle
+    faceUpMaterial: {fileID: 2100000, guid: 57746327f4c973e439e228a5a540dc16, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Mirror Caverns
+    faceUpMaterial: {fileID: 2100000, guid: 622c41698d0f34d4a924981e65477eec, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Nexus Gate
+    faceUpMaterial: {fileID: 2100000, guid: b8c9e14d271df1f4da3794f33d79abc5, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Obsidian Labyrinth
+    faceUpMaterial: {fileID: 2100000, guid: 93b4ce012553c3447937e6417139b29c, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Omega Reef
+    faceUpMaterial: {fileID: 2100000, guid: 9eeae64713bc25443969eb17f1d2d755, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Orbital Graveyard
+    faceUpMaterial: {fileID: 2100000, guid: f69cdc1eb4a60294aa421ff70e7b6bbc, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Quantum Veil
+    faceUpMaterial: {fileID: 2100000, guid: 460011ba3d3c4524fa7b9004b467309b, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Shardworld Crater
+    faceUpMaterial: {fileID: 2100000, guid: 8337ac765d1b3284ea44708ec4427880, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Spectral Dockyards
+    faceUpMaterial: {fileID: 2100000, guid: 3afe7e775872ed94da0cc28e5cf7c972, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Starclave Citadel
+    faceUpMaterial: {fileID: 2100000, guid: d487ee16e7a80f946a75ee6c9e90ecdd, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Sunken Obelisk
+    faceUpMaterial: {fileID: 2100000, guid: d888e2a378407d84ca7abb61b2345236, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: The Lost Crown
+    faceUpMaterial: {fileID: 2100000, guid: 26c8f89f7ecfce84da700ef64bd9a674, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: The Verdant Core
+    faceUpMaterial: {fileID: 2100000, guid: dd285ec7f0b68e84ca14b36effb7fbeb, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Titan Forgeworks
+    faceUpMaterial: {fileID: 2100000, guid: 26f6a19ceb4c76645865a89bc3e2d586, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Voidfrost Expanse
+    faceUpMaterial: {fileID: 2100000, guid: 5938687fbb03a9943b5a4ac7ca301752, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Void Monastery
+    faceUpMaterial: {fileID: 2100000, guid: f7d1f9a3403d8584cbfe3f71c35afe77, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Whispering Spire
+    faceUpMaterial: {fileID: 2100000, guid: 2c64f1ceb10e3ce48a55a8886f59ea4c, type: 2}
+  - siteTransform: {fileID: 361383011176639952, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+    siteName: Zenith Haven
+    faceUpMaterial: {fileID: 2100000, guid: df68d46cb80c82441b9497da794a1665, type: 2}

@@ -47,17 +47,19 @@ public class ControlMaster : MonoBehaviour
             return;
         }
 
-        Transform siteTransform = raycastHit.transform;
-        Site site = siteTransform.GetComponent<Site>();
+        Transform siteTileTransform = raycastHit.transform;
+        SiteTile siteTile = siteTileTransform.GetComponent<SiteTile>();
 
-        if(site.GetIsFaceDown())
+        if(siteTile.GetSiteVisual().GetIsFaceDown())
         {
-            site.TurnFaceUp();
+            siteTile.GetSiteVisual().TurnFaceUp();
         }
         else
         {
-            site.TurnFaceDown();
+            siteTile.GetSiteVisual().TurnFaceDown();
         }
+
+        //Debug.Log(siteTile.GetSite().GetName() + " " + siteTile.GetSite().GetRegionIndex());
     }
 
     public void clickOnPawn()

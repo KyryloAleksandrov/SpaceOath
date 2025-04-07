@@ -4,14 +4,10 @@ using UnityEngine;
 
 public class Site : MonoBehaviour
 {
-    [SerializeField] private MeshRenderer siteMesh;
+    private string siteName;
+    private int regionIndex;
     
-    [SerializeField] private Material faceupMaterial;
-    [SerializeField] private Material facedownMaterial;
-
-    [SerializeField] private string siteName;
-    private bool isFacedown;
-    
+    [SerializeField] private SiteVisual siteVisual;
 
     // Start is called before the first frame update
     void Start()
@@ -25,30 +21,21 @@ public class Site : MonoBehaviour
         
     }
 
-    public void SetIsFacedown(bool isFacedown)
-    {
-        this.isFacedown = isFacedown;
-    }
-
-    public bool GetIsFaceDown()
-    {
-        return isFacedown;
-    }
-
     public string GetName()
     {
         return siteName;
     }
-
-    public void TurnFaceUp()
+    public void SetName(string siteName)
     {
-        siteMesh.material = faceupMaterial;
-        isFacedown = false;
+        this.siteName = siteName;
     }
 
-    public void TurnFaceDown()
+    public int GetRegionIndex()
     {
-        siteMesh.material = facedownMaterial;
-        isFacedown = true;
+        return this.regionIndex;
+    }
+    public void SetRegionIndex(int regionIndex)
+    {
+        this.regionIndex = regionIndex;
     }
 }

@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AeonPrism
       objectReference: {fileID: 0}
+    - target: {fileID: 7365280626898361020, guid: 777f35cf565bb1e448983c45ce98c2e0, type: 3}
+      propertyPath: faceupMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: eaa2fadd420e3dc42bdad37d45858417, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

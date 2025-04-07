@@ -29,12 +29,38 @@ public class MapSetupService : IMapSetupService
         List<int> usedIndexes = new List<int>();
         int randomSiteIndex = -1;
         usedIndexes.Add(randomSiteIndex);
-        foreach(var region in map.GetRegions())
+        for(int i = 0; i < map.GetRegions().Length; i++)
         {
-            foreach(var siteTile in region.GetSiteTiles())
+            foreach(var siteTile in map.GetRegions()[i].GetSiteTiles())
             {
-                
                 while(usedIndexes.Contains(randomSiteIndex))
+                {
+                    randomSiteIndex = Random.Range(0, 30);
+                }
+                usedIndexes.Add(randomSiteIndex);
+                Transform newSiteTransform = GameObject.Instantiate(siteDatas[randomSiteIndex].siteTransform, siteTile.transform.position + new Vector3(0, -0.1f, 0), Quaternion.identity);
+
+                Site newSite = newSiteTransform.GetComponent<Site>();
+                newSite.SetName(siteDatas[randomSiteIndex].siteName);
+                newSite.SetRegionIndex(i);
+
+                SiteVisual newSiteVisual = newSiteTransform.GetComponent<SiteVisual>();
+                newSiteVisual.SetFaceUpVisual(siteDatas[randomSiteIndex].faceUpMaterial);
+
+                sites.Add(newSite);
+
+                siteTile.SetSite(newSite);
+                siteTile.SetSiteVisual(newSiteVisual);
+
+                if(siteTile != map.GetRegions()[i].GetSiteTiles()[0])
+                {
+                    siteTile.GetSiteVisual().TurnFaceDown();
+                }
+                else
+                {
+                    siteTile.GetSiteVisual().TurnFaceUp();
+                }
+                /*while(usedIndexes.Contains(randomSiteIndex))
                 {
                     randomSiteIndex = Random.Range(0, 30);
                 }
@@ -51,7 +77,7 @@ public class MapSetupService : IMapSetupService
                 else
                 {
                     siteTile.GetSite().TurnFaceUp();
-                }
+                }*/
             }
         }
 

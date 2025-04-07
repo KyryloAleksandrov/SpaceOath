@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 361383011176639952}
   - component: {fileID: 1678411228631887698}
   - component: {fileID: -8519143469375782558}
-  m_Layer: 6
+  - component: {fileID: 7365280626898361020}
+  m_Layer: 0
   m_Name: DefaultSite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,10 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 409101ae25a6e804e8a298784b3a6715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  siteMesh: {fileID: 854386664966601248}
-  faceupMaterial: {fileID: 2100000, guid: 90a193fd28e7bce4fb18e939fd70930c, type: 2}
-  facedownMaterial: {fileID: 2100000, guid: 1156d7d056d5819438211660f99016d5, type: 2}
-  siteName: Default
+  siteVisual: {fileID: 7365280626898361020}
 --- !u!65 &-8519143469375782558
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67,10 +65,25 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 5, y: 0.5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7365280626898361020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130883925955206883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1bc2df389765534baae827ddfe4f890, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  siteMesh: {fileID: 854386664966601248}
+  faceupMaterial: {fileID: 2100000, guid: 90a193fd28e7bce4fb18e939fd70930c, type: 2}
+  facedownMaterial: {fileID: 2100000, guid: 1156d7d056d5819438211660f99016d5, type: 2}
 --- !u!1 &3974424001647768395
 GameObject:
   m_ObjectHideFlags: 0
@@ -82,7 +95,7 @@ GameObject:
   - component: {fileID: 3880552494713491449}
   - component: {fileID: 1973961413391571326}
   - component: {fileID: 854386664966601248}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
