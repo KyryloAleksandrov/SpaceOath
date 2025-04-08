@@ -11,12 +11,15 @@ public interface IPlayerService
     void SetActivePlayer(Player player);
 
     void SpawnPawn(Player player, Site site);
+
+    bool pawnIsSelected {get; set;}
 }
 
 public class PlayerService : IPlayerService
 {
     public Player activePlayer {get; private set;}
     public List<Player> players {get;}
+    public bool pawnIsSelected {get; set;}
 
     public PlayerService(IConfigService configService)
     {
@@ -42,6 +45,7 @@ public class PlayerService : IPlayerService
             }
         }
 
+        pawnIsSelected = false;
         SetActivePlayer(players[0]);    //for now to use for debug
     }
 
@@ -57,10 +61,12 @@ public class PlayerService : IPlayerService
 
     public void SpawnPawn(Player player, Site site)
     {
-        Transform pawnTranform = GameObject.Instantiate(player.pawn, site.transform.position + new Vector3(0, -0.1f, 0), Quaternion.identity);
+        Transform pawnTransform = GameObject.Instantiate(player.pawn, site.transform.position + new Vector3(0, +0.1f, 0), Quaternion.identity);
 
-        Pawn pawn = pawnTranform.GetComponent<Pawn>();
+        Pawn pawn = pawnTransform.GetComponent<Pawn>();
         pawn.PaintPlayerColor(player.color);
         pawn.SetPlayer(player);
+
+        player.currentSite = site;
     }
 }

@@ -6,15 +6,26 @@ public interface IMapSetupService
 {
     bool isFirstSetup {get;}
     List<Site> sites {get;}
+    static int[,] travelCost {get;}
 
     void FirstSetup(Map map);
     void NextSetup();
+
+    int GetTravelCost(Site from, Site to);
 }
 
 public class MapSetupService : IMapSetupService
 {
     public bool isFirstSetup {get;}
     public List<Site> sites {get;}
+    private static int[,] travelCosts = new int[4,4]
+    {
+        //0, 1, 2, 3
+    /*0*/{1, 2, 3, 4},
+    /*1*/{2, 2, 3, 4},
+    /*2*/{3, 3, 3, 4},
+    /*3*/{4, 4, 4, 4}
+    };
 
     private SiteData[] siteDatas;
 
@@ -60,32 +71,19 @@ public class MapSetupService : IMapSetupService
                 {
                     siteTile.GetSiteVisual().TurnFaceUp();
                 }
-                /*while(usedIndexes.Contains(randomSiteIndex))
-                {
-                    randomSiteIndex = Random.Range(0, 30);
-                }
-                usedIndexes.Add(randomSiteIndex);
-                Transform newSiteTransform = GameObject.Instantiate(siteDatas[randomSiteIndex].siteTransform, siteTile.transform.position + new Vector3(0, -0.1f, 0), Quaternion.identity);
-                Site newSite = newSiteTransform.GetComponent<Site>();
-                sites.Add(newSite);
-                siteTile.SetSite(newSite);
-
-                if(siteTile != region.GetSiteTiles()[0])
-                {
-                    siteTile.GetSite().TurnFaceDown();
-                }
-                else
-                {
-                    siteTile.GetSite().TurnFaceUp();
-                }*/
             }
         }
-
-
     }
 
     public void NextSetup()
     {
         throw new System.NotImplementedException();
     }
+
+    public int GetTravelCost(Site from, Site to)
+    {
+        int travelCost = travelCosts[from.GetRegionIndex(), to.GetRegionIndex()];
+        return travelCost;
+    }
+
 }

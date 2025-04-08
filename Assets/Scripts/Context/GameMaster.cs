@@ -31,6 +31,7 @@ public class GameMaster : MonoBehaviour
         }
 
         playerService.SpawnPawn(playerService.activePlayer, mapSetupService.sites[5]);
+        
     }
 
     // Update is called once per frame

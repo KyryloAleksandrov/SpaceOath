@@ -2,21 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IActPhaceService
+public interface IActPhaseService
 {
     List<IPlayerAction> GetAvailableActions(Player player);
     List<IPlayerAction> GetAvailableMinorActions(Player player);
     void PerformAction(IPlayerAction action, Player player);
 }
 
-public class ActPhaseService : IActPhaceService
+public class ActPhaseService : IActPhaseService
 {
+    public ActPhaseService()
+    {
+
+    }
     public List<IPlayerAction> GetAvailableActions(Player player)
     {
         List<IPlayerAction> actions = new List<IPlayerAction>();
 
         //Travel
-        
+        foreach(var site in ProjectContext.Instance.MapSetupService.sites)
+        {
+            PlayerAction travelAction = new TravelAction(site);
+            if(travelAction.CanExecute(player))
+            {
+                actions.Add(travelAction);
+            }
+        }
 
         return actions;
     }
@@ -28,6 +39,13 @@ public class ActPhaseService : IActPhaceService
 
     public void PerformAction(IPlayerAction action, Player player)
     {
-        throw new System.NotImplementedException();
+        if(!action.CanExecute(player))
+        {
+            return;
+        }
+
+        action.Execute(player);
+
+        ProjectContext.Instance.GameEventService.ActionPerformed(player, action);
     }
 }

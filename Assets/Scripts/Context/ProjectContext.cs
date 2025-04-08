@@ -20,11 +20,20 @@ public class ProjectContext
     public IMapSetupService MapSetupService {get; private set;}
     public IPlayerService PlayerService{get; private set;}
 
+    public IGameEventService GameEventService{get; private set;}
+
+    public IActPhaseService ActPhaseService{get; private set;}
+
+
     public void Initialize(SitesConfig sitesConfig, PlayerConfig playerConfig)
     {
         ConfigService = new ConfigService(sitesConfig, playerConfig);
+
         MapSetupService = new MapSetupService(ConfigService);
         PlayerService = new PlayerService(ConfigService);
+
+        GameEventService = new GameEventService();
+        ActPhaseService = new ActPhaseService();
         Debug.Log("Loaded successfully");
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ControlMaster : MonoBehaviour
@@ -39,6 +40,7 @@ public class ControlMaster : MonoBehaviour
 
     public void ClickOnSite()
     {
+
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         bool isSite = Physics.Raycast(ray, out RaycastHit raycastHit, float.MaxValue, siteLayerMask);
 
@@ -50,14 +52,37 @@ public class ControlMaster : MonoBehaviour
         Transform siteTileTransform = raycastHit.transform;
         SiteTile siteTile = siteTileTransform.GetComponent<SiteTile>();
 
-        if(siteTile.GetSiteVisual().GetIsFaceDown())
+        if(ProjectContext.Instance.PlayerService.pawnIsSelected == false)
         {
-            siteTile.GetSiteVisual().TurnFaceUp();
+            if(siteTile.GetSiteVisual().GetIsFaceDown())
+            {
+                siteTile.GetSiteVisual().TurnFaceUp();
+            }
+            else
+            {
+                siteTile.GetSiteVisual().TurnFaceDown();
+            }
         }
         else
         {
-            siteTile.GetSiteVisual().TurnFaceDown();
+            Player activePlayer = ProjectContext.Instance.PlayerService.GetActivePlayer();
+            Site targetSite = siteTile.GetSite();
+
+            TravelAction travelAction = new TravelAction(targetSite);
+
+            if(travelAction.CanExecute(activePlayer))
+            {
+                ProjectContext.Instance.ActPhaseService.PerformAction(travelAction, activePlayer);
+                ProjectContext.Instance.PlayerService.pawnIsSelected = false;
+            }
+
+            else
+            {
+                ProjectContext.Instance.PlayerService.pawnIsSelected = false;
+                Debug.Log("Can't perform");
+            }
         }
+
 
         //Debug.Log(siteTile.GetSite().GetName() + " " + siteTile.GetSite().GetRegionIndex());
     }
@@ -75,6 +100,11 @@ public class ControlMaster : MonoBehaviour
         Transform pawnTransform = raycastHit.transform;
         Pawn pawn = pawnTransform.GetComponent<Pawn>();
 
-        Debug.Log(pawn.player.currentSupply);
+        if(pawn.player == ProjectContext.Instance.PlayerService.GetActivePlayer())
+        {
+            ProjectContext.Instance.PlayerService.pawnIsSelected = !ProjectContext.Instance.PlayerService.pawnIsSelected;
+        }
+
+        Debug.Log(pawn.player.currentSite.GetName() + " " + ProjectContext.Instance.PlayerService.pawnIsSelected);
     }
 }
