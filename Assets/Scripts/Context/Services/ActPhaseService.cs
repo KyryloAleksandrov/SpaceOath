@@ -4,7 +4,7 @@ using UnityEngine;
 
 public interface IActPhaseService
 {
-    List<IPlayerAction> GetAvailableActions(Player player);
+    List<IPlayerAction> GetAvailableMajorActions(Player player);
     List<IPlayerAction> GetAvailableMinorActions(Player player);
     void PerformAction(IPlayerAction action, Player player);
 }
@@ -15,7 +15,7 @@ public class ActPhaseService : IActPhaseService
     {
 
     }
-    public List<IPlayerAction> GetAvailableActions(Player player)
+    public List<IPlayerAction> GetAvailableMajorActions(Player player)
     {
         List<IPlayerAction> actions = new List<IPlayerAction>();
 

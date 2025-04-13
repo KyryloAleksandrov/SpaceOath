@@ -51,5 +51,8 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "SpaceOath.sln"
+    "dotnet.defaultSolution": "SpaceOath.sln",
+    "cSpell.words": [
+        "Datas"
+    ]
 }

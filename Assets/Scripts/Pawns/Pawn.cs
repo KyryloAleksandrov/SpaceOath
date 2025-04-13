@@ -14,9 +14,9 @@ public class Pawn : MonoBehaviour
     }
     public void PaintPlayerColor(Color color)
     {
-        foreach (var meshrenderer in meshRenderers)
+        foreach (var meshRenderer in meshRenderers)
         {
-            meshrenderer.material.color = color;
+            meshRenderer.material.color = color;
         }
     }
 
@@ -29,6 +29,5 @@ public class Pawn : MonoBehaviour
     {
         Debug.Log("Changing position to" + targetPosition);
         this.transform.position = targetPosition;
-
     }
 }
