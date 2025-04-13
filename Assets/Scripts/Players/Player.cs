@@ -29,4 +29,9 @@ public abstract class Player
         this.pawn = pawn;
         this.color = color;
     }
+
+    public virtual void AssignPawn(Transform pawnTransform)
+    {
+        this.pawn = pawnTransform;
+    }
 }

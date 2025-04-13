@@ -63,6 +63,8 @@ public class PlayerService : IPlayerService
     {
         Transform pawnTransform = GameObject.Instantiate(player.pawn, site.transform.position + new Vector3(0, +0.1f, 0), Quaternion.identity);
 
+        player.AssignPawn(pawnTransform);
+
         Pawn pawn = pawnTransform.GetComponent<Pawn>();
         pawn.PaintPlayerColor(player.color);
         pawn.SetPlayer(player);
